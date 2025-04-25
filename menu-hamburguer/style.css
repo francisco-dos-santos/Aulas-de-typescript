@@ -1,0 +1,132 @@
+*{
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color: black;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+a:hover{
+  background-color: rgba(0,0, 0, 0.05);
+}
+header{
+  background-color: rgba(0,0, 0, 0.04);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding: 0 1rem;
+  height:60px;
+}
+#logo{
+  font-weight:700;
+  font-size:2rem;
+}
+header #nav{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  padding:0;
+  margin:0;
+}
+#nav button{
+  visibility:hidden;
+  opacity:0;
+  height:0px;
+  width: 0px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+@media (max-width:550px){
+  header{
+    position:relative;
+  }
+  #nav button {
+    visibility: visible;
+    opacity: initial;
+    height:initial;
+    width:initial;
+    
+  } 
+  #menu{
+    visibility:hidden;
+    opacity:0;
+    height:0px;
+    width:0px;
+  }
+
+  #btn-mobile{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:.4rem;
+  }
+  #hamburguer{
+   border-top: 2px solid currentColor;
+  }
+
+  #hamburguer::after{
+    content: "";
+    display: block;
+    height:2px;
+    width:20px;
+    background: currentColor;
+    margin-top:5px;
+    transition: 0.3s;
+    position:relative;
+  }
+  #hamburguer::before{
+    content: "";
+    display: block;
+    height: 2px;
+    width:20px;
+    background:currentColor;
+    margin-top: 5px;
+    transition:0.3s;
+    position: relative;
+  }
+  #nav.active  #hamburguer{
+    border-top-color:transparent;
+  }
+  #nav.active  #hamburguer::before{
+    transform: rotate(135deg);
+  }
+  #nav.active  #hamburguer::after{
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  #nav.active  #menu{
+    visibility: visible;
+    opacity: initial;
+    height:100vh;
+    width:100%;
+    position:absolute;
+    top:60px;
+    left:0;
+    transition:0.3s;
+    background-color: rgba(0,0, 0, 0.05);
+    display: block;
+    margin:0;
+    padding:0 15px;
+  }
+  #nav.active #menu li {
+    margin:0;
+    padding:15px;
+    border-bottom: 1px solid rgb(196, 192, 192);
+  }
+}
+button{
+  background:transparent;
+  border:0;
+}
+
+#menu{
+  list-style: none;
+  display: flex;
+  align-items:center;
+}
+#menu li + li{
+  margin-left: .5rem;
+}

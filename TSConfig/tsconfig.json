@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig to read more about this file */
+    /* Language and Environment */
+    /*verção do javascript gerado */
+    "target": "ESNext",                            
+    //"module": "commonjs",                                /* Specify what module code is generated. */
+    /* JavaScript Support */
+    "allowJs": true,                                  /* Allow JavaScript files to be a part of your program. Use the 'checkJS' option to get errors from these files. */
+    "sourceMap": true,                                /* Create source map files for emitted JavaScript files. */
+    "outDir":"./dist",                                   /* Specify an output folder for all emitted files. */
+    "removeComments": true,                           /* Disable emitting comments. */
+    "strict": true,                                      /* Enable all strict type-checking options. */
+    "noImplicitReturns": true,                           /* Enable error reporting for codepaths that do not explicitly return in a function. */
+     "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+    // "preserveSymlinks": true,                         /* Disable resolving symlinks to their realpath. This correlates to the same flag in node. */
+    //"forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
+    "isolatedModules": true, 
+    "declaration": true, 
+    /* Type Checking */
+    /* Completeness */
+    //"skipLibCheck": true                               /* Skip type checking all .d.ts files. */
+  },
+  /*Compila o que estiver na pasta src
+  mais precisa existir a pasta(src) para não travar a compilação*/
+  "include":["src"],
+  /*não compila o que estiver na pasta node_modules*/
+  "exclude":["node_modules"]
+}
