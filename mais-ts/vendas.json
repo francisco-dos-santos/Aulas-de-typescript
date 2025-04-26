@@ -1,0 +1,29 @@
+[
+  [
+    "Notebook",
+    150000,
+    "2025-03-07 08:25:40",
+    {
+      "marca":"Apple",
+      "cor":"cinza"
+    }
+  ],
+  [
+    "Smartphone",
+    90000,
+    "2024-03-25 20:25:40",
+    {
+      "marca":"Samsung",
+      "cor":"preta"
+    }
+  ],
+  [
+    "Tablet",
+    45000,
+    "2025-06-06 12:25:40",
+    {
+      "marca":"Apple",
+      "cor":"cinza"
+    }
+  ]
+]

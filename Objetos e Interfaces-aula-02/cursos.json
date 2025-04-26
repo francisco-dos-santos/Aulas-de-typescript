@@ -1,0 +1,26 @@
+[
+  {
+    "nome":"html,css,js",
+    "horas":40,
+    "aulas":200,
+    "tags":["html","css3","browser","js"],
+    "idAulas":[1,2,3,5,6,7],
+    "nivel":"iniciante"
+  },
+  {
+    "nome":"UI Design",
+    "horas":20,
+    "aulas":150,
+    "tags":["figma","cores","adobe","paleta"],
+    "idAulas":[1,2,3,5,6,7],
+    "nivel":"avançado"
+  },
+  {
+    "nome":"Reactjs com typescript",
+    "horas":60,
+    "aulas":250,
+    "tags":["redux","hook","zustang","components"],
+    "idAulas":[1,2,3,5,6,7],
+    "nivel":"iniciante"
+  }
+]

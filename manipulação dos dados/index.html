@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manipulação de dados</title>
+  <style>
+    body{
+      font-family: sans-serif;
+      font-size:1rem;
+      margin:2rem;
+    }
+    article{
+      padding:1rem;
+      width:900px;
+      max-width:100%;
+      margin: 0 auto;
+    }
+    table{
+      border-spacing:0;
+      text-align:left;
+    }
+    table th,
+    table td{
+      padding: .5rem 1rem;
+    }
+    table tr:nth-child(even){
+      background: ghostwhite ;
+    }
+    h2, p{
+      margin-left:1rem;
+    }
+    h2{
+      border-top: 6px solid ghostwhite;
+      padding-top: 1rem;
+    }
+    div{
+      border-top: 2px solid ghostwhite;
+    }
+  </style>
+</head>
+<body>
+  <article>
+    <h2>Estatisticas</h2>
+    <p>Total:<span id="total"></span></p>
+    <div id="pagamento"></div>
+    <div id="status"></div>
+    <p id="dia">Dias com mais Vendas: <span ></span></p>
+    <h2>Dados</h2>
+    <table id="transacoes">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Pagamento</th>
+          <th>Compra</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+</article>
+  <script type="module" src="./dist/script.js"></script>
+</body>
+</html>

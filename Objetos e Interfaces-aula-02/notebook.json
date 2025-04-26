@@ -1,0 +1,14 @@
+[
+  {
+    "nome":"Notebook",
+    "preco":200,
+    "garantia":3,
+    "descricao":"Notebook com 128gb de memoria Ram"
+  },
+  {
+    "nome":"Tablet",
+    "preco":150,
+    "garantia":2,
+    "descricao":"Tablet com 18gb de memoria Ram"
+  }
+]
