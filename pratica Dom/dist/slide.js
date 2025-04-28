@@ -13,7 +13,6 @@ export default class Slide {
         this.index = 0;
         this.slide = this.slides[this.index];
         this.init();
-        this.show(this.index);
         console.log(slides);
     }
     hide(el) {
@@ -26,10 +25,14 @@ export default class Slide {
         this.slide.classList.add("active");
     }
     next() {
-        this.show(this.index + 1);
+        const next = (this.index + 1) < this.slides.length ? this.index + 1 : 0;
+        this.show(next);
+        console.log(this.index);
     }
     prev() {
-        this.show(this.index - 1);
+        const prev = this.index > 0 ? this.index - 1 : this.slides.length - 1;
+        this.show(prev);
+        console.log(this.index);
     }
     addControls() {
         const prevButton = document.createElement('button');
